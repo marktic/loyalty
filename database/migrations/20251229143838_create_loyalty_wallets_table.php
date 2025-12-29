@@ -25,7 +25,7 @@ final class CreateLoyaltyWalletsTable extends AbstractMigration
             ->addColumn('owner_id', 'biginteger', ['signed' => false])
 
             // Financials
-            ->addColumn('balance', 'biginteger', ['default' => 0, 'signed' => true])
+            ->addColumn('points', 'biginteger', ['default' => 0, 'signed' => true])
 
             // Timestamps
             ->addTimestamps()
