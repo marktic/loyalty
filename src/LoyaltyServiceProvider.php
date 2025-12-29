@@ -37,8 +37,8 @@ class LoyaltyServiceProvider extends BaseBootableServiceProvider
     public function boot(): void
     {
         parent::boot();
-        LoyaltyModels::wallets();
-        LoyaltyModels::pointValues();
-        LoyaltyModels::pointTransactions();
+//        LoyaltyModels::wallets();
+//        LoyaltyModels::pointValues();
+//        LoyaltyModels::pointTransactions();
     }
 }
