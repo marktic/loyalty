@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Marktic\Loyalty\Wallets\Models;
+namespace Marktic\Loyalty\Rewards\Models;
 
 use Marktic\Loyalty\AbstractBase\Models\HasMetadata\RecordHasMetadataTrait;
 use Marktic\Loyalty\AbstractBase\Models\LoyaltyRecord;
 
 /**
- * Class Wallet
- * @package Marktic\Loyalty\Wallets\Models
+ * Class Reward
+ * @package Marktic\Loyalty\Rewards\Models
  */
-class Wallet extends LoyaltyRecord
+class Reward extends LoyaltyRecord
 {
     use RecordHasMetadataTrait;
 }

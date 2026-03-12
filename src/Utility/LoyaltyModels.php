@@ -8,6 +8,7 @@ use ByTIC\PackageBase\Utility\ModelFinder;
 use Marktic\Loyalty\LoyaltyServiceProvider;
 use Marktic\Loyalty\PointTransactions\Models\PointTransactions;
 use Marktic\Loyalty\PointValues\Models\PointValues;
+use Marktic\Loyalty\Rewards\Models\Rewards;
 use Marktic\Loyalty\Wallets\Models\Wallets;
 use Nip\Records\RecordManager;
 
@@ -19,6 +20,7 @@ class LoyaltyModels extends ModelFinder
     public const WALLETS = 'wallets';
     public const POINT_VALUES = 'point_values';
     public const POINT_TRANSACTIONS = 'point_transactions';
+    public const REWARDS = 'rewards';
 
     /**
      * @return Wallets|RecordManager
@@ -72,6 +74,24 @@ class LoyaltyModels extends ModelFinder
     public static function pointTransactionsTable(): string
     {
         return static::getTable(self::POINT_TRANSACTIONS, PointTransactions::class);
+    }
+
+    /**
+     * @return Rewards|RecordManager
+     */
+    public static function rewards(): Rewards|RecordManager
+    {
+        return static::getModels(self::REWARDS, Rewards::class);
+    }
+
+    public static function rewardsClass(): string
+    {
+        return static::getModelsClass(self::REWARDS, Rewards::class);
+    }
+
+    public static function rewardsTable(): string
+    {
+        return static::getTable(self::REWARDS, Rewards::class);
     }
 
     protected static function packageName(): string
