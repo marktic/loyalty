@@ -40,5 +40,6 @@ class LoyaltyServiceProvider extends BaseBootableServiceProvider
 //        LoyaltyModels::wallets();
 //        LoyaltyModels::pointValues();
 //        LoyaltyModels::pointTransactions();
+//        LoyaltyModels::rewards();
     }
 }
