@@ -8,7 +8,7 @@ final class CreateLoyaltyTransactionsTable extends AbstractMigration
 {
     public function change(): void
     {
-        $table = $this->table('loyalty_point_transactions', [
+        $table = $this->table('mkt_loyalty_point_transactions', [
             'id' => false,
             'primary_key' => 'id'
         ]);
@@ -41,7 +41,7 @@ final class CreateLoyaltyTransactionsTable extends AbstractMigration
             ->addIndex(['reference', 'reference_id'])
 
             // Foreign Key
-            ->addForeignKey('wallet_id', 'loyalty_wallets', 'id', [
+            ->addForeignKey('wallet_id', 'mkt_loyalty_wallets', 'id', [
                 'delete' => 'CASCADE',
                 'update' => 'NO_ACTION'
             ])

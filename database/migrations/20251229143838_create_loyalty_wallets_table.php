@@ -9,7 +9,7 @@ final class CreateLoyaltyWalletsTable extends AbstractMigration
     public function change(): void
     {
         // We disable the default ID to define an explicit BigInteger ID
-        $table = $this->table('loyalty_wallets', [
+        $table = $this->table('mkt_loyalty_wallets', [
             'id' => false,
             'primary_key' => 'id'
         ]);

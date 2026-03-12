@@ -8,7 +8,7 @@ final class AlterLoyaltyWalletsAddContextAndMetadata extends AbstractMigration
 {
     public function change(): void
     {
-        $table = $this->table('loyalty_wallets');
+        $table = $this->table('mkt_loyalty_wallets');
 
         $table
             ->addColumn('context', 'text', ['null' => true, 'after' => 'owner_id'])

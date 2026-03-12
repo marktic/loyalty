@@ -13,8 +13,8 @@ use Marktic\Loyalty\Utility\PackageConfig;
  */
 class Wallets extends LoyaltyRepository
 {
-    public const TABLE = 'loyalty_wallets';
-    public const CONTROLLER = 'loyalty-wallets';
+    public const TABLE = 'mkt_loyalty_wallets';
+    public const CONTROLLER = 'mkt_loyalty-wallets';
 
     public function getTable(): string
     {
