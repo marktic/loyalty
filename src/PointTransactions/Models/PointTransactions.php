@@ -14,8 +14,8 @@ use Nip\Records\RecordManager;
  */
 class PointTransactions extends LoyaltyRepository
 {
-    public const TABLE = 'loyalty_point_transactions';
-    public const CONTROLLER = 'loyalty-point_transactions';
+    public const TABLE = 'mkt_loyalty_point_transactions';
+    public const CONTROLLER = 'mkt_loyalty-point-transactions';
 
     public function getTable(): string
     {

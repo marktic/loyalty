@@ -8,7 +8,7 @@ final class AlterLoyaltyPointTransactionsAddColumns extends AbstractMigration
 {
     public function change(): void
     {
-        $table = $this->table('loyalty_point_transactions');
+        $table = $this->table('mkt_loyalty_point_transactions');
 
         $table
             ->addColumn('context', 'text', ['null' => true, 'after' => 'wallet_id'])

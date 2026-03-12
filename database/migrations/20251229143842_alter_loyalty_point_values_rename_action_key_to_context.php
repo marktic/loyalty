@@ -8,7 +8,7 @@ final class AlterLoyaltyPointValuesRenameActionKeyToContext extends AbstractMigr
 {
     public function up(): void
     {
-        $table = $this->table('loyalty_point_values');
+        $table = $this->table('mkt_loyalty_point_values');
 
         $table
             ->removeIndexByName('unique_point_value_config')
@@ -28,7 +28,7 @@ final class AlterLoyaltyPointValuesRenameActionKeyToContext extends AbstractMigr
 
     public function down(): void
     {
-        $table = $this->table('loyalty_point_values');
+        $table = $this->table('mkt_loyalty_point_values');
 
         $table
             ->removeIndexByName('unique_point_value_config')

@@ -8,7 +8,7 @@ final class CreateLoyaltyRewardsTable extends AbstractMigration
 {
     public function change(): void
     {
-        $table = $this->table('loyalty_rewards', [
+        $table = $this->table('mkt_loyalty_rewards', [
             'id' => false,
             'primary_key' => 'id',
         ]);
